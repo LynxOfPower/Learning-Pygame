@@ -8,7 +8,9 @@
 
 
 import pygame
-print(pygame.ver)
+import random
+
+# print(pygame.ver)
 
 pygame.init()
 
@@ -17,14 +19,20 @@ screen_height = 800
 
 screen = pygame.display.set_mode([screen_width, screen_height]) # Drawing Window
 
+## CLASSES ##
+class hover():
+    def __init__():
+        print("TO BE IMPLEMENTED")
 
-#So I got the sprite working, now how do I make it do stuff?
-# Sprites for the soil grid
+    def isHovering():
+        print("TO BE IMPLEMENTED")
+
+## SPRITES ##
 class GridTiles(pygame.sprite.Sprite):
     def __init__(self):
         super(GridTiles, self).__init__()
         self.surf = pygame.Surface((32, 32))
-        self.image = pygame.image.load("images/soilX5.png")
+        self.image = pygame.image.load("data/gfx/soilX5.png")
 
 tile = GridTiles() # initialize the GridTiles sprite in this variable.
 
