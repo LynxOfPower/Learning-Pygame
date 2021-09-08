@@ -26,11 +26,6 @@ while running:
     # Draw the card to the screen
     screen.blit(cardOne.mainSprite, cardOne.position)
 
-    # Card Movement
-    if mouseX >= cardOne.position[0] and mouseY >= cardOne.position[1] and mouseX <= cardOne.position[0] + 96 and mouseY <= cardOne.position[1] + 96 and event.type == pygame.MOUSEBUTTONDOWN:
-        print("Mouse is here!")
-        cardOne.position = mouseX/2, mouseY/2
-
     #TOP ROW
     screen.blit(tile.image, (100, 200))
     screen.blit(tile.image, (275, 200))
