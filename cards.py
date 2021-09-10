@@ -1,6 +1,7 @@
 import pygame
 
 class firstCard:
-    position = pygame.Vector2()
-    position.xy = 10, 10
-    mainSprite = pygame.image.load("data/gfx/card1X3.png")
+    def __init__(self):
+        self.position = pygame.Vector2()
+        self.position.xy = 675, 25
+        self.sprite = pygame.image.load("data/gfx/card1X3.png")
